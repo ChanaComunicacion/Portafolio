@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     video_explicativo_parcial https://youtu.be/Up_LcQ_812Y
+     
+    <title>Portafolio Chana</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    h1 {
+        font-family: 'Candara';
+        src: url('candara_bold.ttf') ('truetype');
+        font-style: normal;
+        font: #feffff;
+        font-size: 34px;
+        font-weight: normal;
+    }
+
+    h2 {
+        font-family: 'Candara';
+        src: url('candara_bold.ttf') ('truetype');
+        font-size: 40px;
+        letter-spacing: 7px;
+        padding: 10px;
+        margin-left: 20px;
+        color: #05A696;
+        font-weight: normal;
+        position: initial;
+        text-align: left;
+    }
+
+    h3 {
+        font-family: 'Candara';
+        src: url('candara_bold.ttf')('truetype');
+        font-style: bold;
+        font-size: 24px;
+        letter-spacing: 1px;
+        padding: 5px;
+        margin-left: 20px;
+        font: rgb(0, 0, 0);
+        text-align: center;
+        margin-top: 0;
+    }
+
+    h4 {
+        font-family: 'Candara';
+        src: url('candara_bold.ttf') ('truetype');
+        font-size: 40px;
+        letter-spacing: 7px;
+        padding: 10px;
+        margin-left: 20px;
+        color: #EAF207;
+        font-weight: bolder;
+        position: initial;
+        text-align: left;
+        border: 5px;
+
+
+
+    }
+
+    p {
+        font-family: sans-serif;
+        font-size: 18px;
+        font: #000;
+        padding: 20px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+
+    body {
+        font-family: sans-serif;
+        font-size: 11px;
+        font: #000;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+
+    /*estilos de la estructura del cuerpo*/
+
+    .bg-1 {
+        background-image: url(fondo\ web.png);
+        background-color: transparent;
+        height: 50vw;
+        width: 200vh;
+        padding: 0px;
+        margin-top: 2px;
+        margin-bottom: 0px;
+        margin-left: 0;
+        margin-right: 0;
+        background-repeat: no-repeat;
+        text-align: center;
+        background-size: cover;
+    }
+
+    .bg-2 {
+        background-image: url(fondo\ web.png);
+        background-color: transparent;
+        height: 7vw;
+        width: 200vh;
+        padding: 0px;
+        margin-top: 2px;
+        margin-bottom: 0px;
+        margin-left: 0;
+        margin-right: 0;
+        background-repeat: no-repeat;
+        text-align: center;
+        background-size: cover;
+    }
+
+    .bg-3 {
+        background-image: url(Fondo\ gris.png);
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .bg-4 {
+        color: #fff;
+        background-color: #EAF207;
+        margin: 0px;
+        padding: 0%;
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .container-fluid {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background-color: transparent;
+        margin: 0%;
+        margin-top: 50px;
+        width: 90vw;
+        height: 1000vh;
+    }
+
+    .container-carousel {
+        width: 30vw;
+        height: 30vw;
+        background-color: transparent;
+        text-align: center;
+        background-size: cover;
+    }
+
+    .navbar {
+        font-family: 'Candara';
+        src: url('candara_bold.ttf') ('truetype');
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 3;
+        border-radius: 10;
+        margin-bottom: 3;
+        font-size: 16px;
+        border-color: transparent;
+        background-color: #F2F2F2;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .jumbotron {
+        background-color: transparent;
+    }
+
+    .container {
+        background-color: transparent;
+        width: 100vw;
+    }
+
+    .carousel-control.right,
+    .carousel-control.left {
+        background-image: "none";
+        color: #EAF207;
+    }
+
+    .carousel-indicators li {
+        border-color: #ffffff;
+    }
+
+    .carousel-indicators li.active {
+        background-color: #fffffb;
+    }
+
+    .item spam {
+        font-style: normal;
+
+    }
+
+    .botonsiguiente {
+        background-image: url(botonsiguiente.png);
+        width: 6vw;
+        height: 25px;
+        border: none;
+        background-repeat: no-repeat;
+        margin-left: 50px;
+        margin: 10px
+    }
+
+    .botonatras {
+        background-image: url(botonatras.png);
+        width: 6vw;
+        height: 5vh;
+        border: none;
+        background-repeat: no-repeat;
+        margin-left: 50px;
+        margin: 10px;
+
+    }
+
+    .botonir {
+        background-image: url(botonir.png);
+        width: 5vw;
+        height: 4vh;
+        border: none;
+        background-repeat: no-repeat;
+        margin-left: 50px;
+        margin: 10px;
+    }
+
+    .home {
+        font-family: 'Candara';
+        src: url('candara_bold.ttf') ('truetype');
+        font-style: normal;
+        font-weight: bolder;
+        border: 2cm;
+    }
+
+    .navbar-left {
+        text-align: center;
+    }
+
+    #escuelas {
+        text-align: center;
+        padding: 10px;
+        margin: 15px;
+        width: 270px;
+        margin-left: 55px;
+        margin-right: 10px;
+    }
+
+    #idiomas {
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
+        width: 15vw;
+        margin-left: 100px;
+        margin-right: 0px;
+        margin-bottom: 80px;
+    }
+
+    #mariposa {
+        width: 5vw;
+        margin-left: 200px;
+        margin-top: 0;
+        margin-bottom: 50px;
+
+    }
+
+    #Linea-verde {
+        width: 100vw;
+        height: 10vh;
+        background-color: #EAF207;
+        padding: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 18px;
+        margin-right: 24px;
+    }
+
+    .pie {
+        background-color: transparent;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+    }
+
+    footer {  background-color: #05A696;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-align: center;
+        padding: 20px;
+
+    }
+</style>
+
+<script lenguage="javascript" type="text/javascript">
+    function enviar(pagina) {
+        document.nombreDelFormulario.action = pagina;
+        document.nombreDelFormulario.submit();
+    }
+    
+</script>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="Portafolio.html"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="#myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+
+                    <li><a href="Portafolio.html">HOME</a></li>
+                    <li><a href="Sobre mi.html">SOBRE MI</a></li>
+                    <li><a href="Galeria.html" class="home" style="color: #EAF207">GALERÍA</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container bg-2 text-center">
+        <div class="col-sm-12">
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div class="container bg-3 text-center" id="formacion" style="font:#05A696">
+        <div class="col-sm-12 text-left">
+            <marquee direction="right" loop="20">
+                <h2>Diseño Web</h2>
+            </marquee>
+        </div>
+
+        <div class="row ">
+            <div class="col-sm-5" style="margin:30px; margin-left: 70px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LsmE_p0aMnY?controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p> Blog Alma de ruta </p>
+            </div>
+            <div class="col-sm-5" style="margin:30px;">
+                <img src="noticias.png" class="img-responsive" alt="noticias web">
+                <p> Periodico Universitario</p>
+            </div>
+
+        </div>
+
+        <div class="container bg-1">
+            <div class="row">
+                <div class="col-sm-12 margin:30px">
+                    <marquee direction="right" loop="20">
+                        <h4>Streaming</h4>
+                    </marquee>
+                    <h3>Dirección de cámaras</h3>
+                    <iframe
+                        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D198523059220463%26set%3Da.194018069670962%26type%3D3&show_text=false&width=500"
+                        width="500" height="375" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                    </iframe>
+                        
+                    <p>En el marco del día de San Pacho, se realizó un concierto de la Banda Sinfónica de Cundinamarca y
+                        fue transmitido en vivo.</p>
+                    <a
+                        href="https://www.facebook.com/watch/live/?extid=CL-UNK-UNK-UNK-AN_GK0T-GK1C-GK2T&ref=watch_permalink&v=578961420649735">
+                        <form name="botonir" action="" method="post">
+                            <input type="button" value="" class="botonir"
+                                onClick="enviar('https://www.facebook.com/watch/live/?extid=CL-UNK-UNK-UNK-AN_GK0T-GK1C-GK2T&ref=watch_permalink&v=578961420649735')">
+                        </form>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row">
+            <div class="container bg-3 text-center" id="formacion" style="font:#05A696">
+                <div class="col-sm-12 text-left; margin-left: 30px;">
+                    <marquee direction="right" loop="10">
+                        <h2>Fotografías</h2>
+                    </marquee>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="container-carousel" text-aling="'center" id="container-carousel"
+                            style="margin: 20px;">
+                            <div id="#myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <il data-target="#myCarousel" data-slide to="0" class="active"></il>
+                                    <il data-target="#myCarousel" data-slide to="1"></il>
+                                </ol>
+
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="luna (1).JPG" alt="" class="imagencarousel img-responsive">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="luna (2).JPG" alt="" class="imagencarousel img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="luna (3).JPG" alt="" class="imagencarousel img-responsive">
+                                    </div>
+
+                                    <a class="left carousel-control" href="#myCaroulsel" role="button"
+                                        data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Regresar</span>
+                                    </a>
+
+                                    <a class="right carousel-control" href="#myCaroulsel" role="button"
+                                        data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Siguiente</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="container-carousel" text-aling="'center" id="container-carousel"
+                            style="margin: 20px;">
+                            <div id="#myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <il data-target="#myCarousel" data-slide to="0" class="active"></il>
+                                    <il data-target="#myCarousel" data-slide to="1"></il>
+                                </ol>
+
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="sur (3).JPG" alt="" class="imagencarousel img-responsive">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="sur (2).JPG" alt="" class="imagencarousel img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="sur (1).JPG" alt="" class="imagencarousel img-responsive">
+                                    </div>
+
+                                    <a class="left carousel-control" href="#myCaroulsel" role="button"
+                                        data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Regresar</span>
+                                    </a>
+
+                                    <a class="right carousel-control" href="#myCaroulsel" role="button"
+                                        data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Siguiente</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="container-carousel" text-aling="'center" id="container-carousel"
+                            style="margin: 20px;">
+                            <div id="#myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <il data-target="#myCarousel" data-slide to="0" class="active"></il>
+                                    <il data-target="#myCarousel" data-slide to="1"></il>
+                                </ol>
+
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="laguna (2).jpg" alt="" class="imagencarousel img-responsive">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="laguna (3).jpg" alt="" class="imagencarousel img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="luna (1).JPG" alt="" class="imagencarousel img-responsive">
+                                    </div>
+
+                                    <a class="left carousel-control" href="#myCaroulsel" role="button"
+                                        data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Regresar</span>
+                                    </a>
+
+                                    <a class="right carousel-control" href="#myCaroulsel" role="button"
+                                        data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Siguiente</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container bg-2 text-center margin-top: 20px">
+                <div class="col-sm-12">
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <div class="container bg-3 text-center" id="formacion" style="font:#05A696">
+                <div class="col-sm-12 text-left">
+                    <marquee direction="right" loop="20">
+                        <h4>Marketing - Community manager</h4>
+                    </marquee>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-5"
+                    style="margin:30px; margin-left: 70px; padding: 20px; width: 30vw;margin-left:200px;">
+                    <img src="climacentr.jpeg" class="img-responsive" alt="captura estadísticas Climacentro">
+                    <p> Climacentro</p>
+                </div>
+                <div class="col-sm-5" style="margin:30px; padding: 20px; width: 30vw; margin-left: 100px;">
+                    <img src="Nina.jpeg" class="img-responsive" alt="captura estadísticas Climacentro">
+                    <p>Bitácora de Nina</p>
+                </div>
+            </div>
+
+            <div class="container bg-4 text-center">
+                <div class="col-sm-12" id="Linea-verde">
+                    <marquee direction="right" loop="10">
+                        <h1 style="margin-top: 15px;">Proyectos</h1>
+                    </marquee>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 margin-top:0px">
+                    <h3>Santa Rosa Imaginada 2022</h3>
+                    <img src="santarosa.jpg" class="img-responsive"
+                        alt="Ana Leila Pacheco en presentación Santa Rosa Imaginada"
+                        style="text-align: center; margin-bottom: 20px; margin-top: 20px; margin-right: 20px; margin-left: 500px; width:30vw ;">
+                    <p>Proyecto internacional de investigación sobre imaginarios urbanos</p>
+                </div>
+                <br><br>
+                <div class="col-sm-12">
+                    <h3>CIM 2022</h3>
+                    <img src="cim.jpg" class="img-responsive" alt="Centro de Inclusión Municipal"
+                        style="text-align: center; margin-bottom: 20px; margin-top: 20px; margin-right: 20px; margin-left: 500px; width:30vw ;">
+                    <p>Plan de comunicación personalizado. Prácticas comunitarias en Centro de Inclusión Municipal
+                    </p>
+                </div>
+                <br><br>
+                <div class="col-sm-12">
+                    <h3>CEFLI 2019</h3>
+                    <a
+                        href="http://www.unlpam.edu.ar/cultura-y-extension/extension-universitaria/programas/educaci%C3%B3n/peu-2019-practicas-sociocomunitarias">
+                        <img src="cefli.jpeg" class="img-responsive" alt="Centro Especial de Formación Laboral"
+                            style="text-align: center; margin-bottom: 20px; margin-top: 20px; margin-right: 20px; margin-left: 500px; width:30vw ;"></a>
+                    <p>Prácticas comunitarias en Centro de especial de formación laboral integral.
+                    </p>
+                    <br> <br> 
+                </div>
+
+                <div class="row">
+                    <br>
+                    <div class="col-sm-4 ">
+                        <a href="Sobre mi.html" target="_blank">
+                        <form name="botonatras" action="" method="post">
+                            <input type="button" value="" onClick="enviar('sobremi.html')" class="botonatras">
+                        </form>
+                    </a>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <img src="mariposa amarilla.png" alt="mariposa" id="mariposa" class="img-responsive">
+                    </div>
+        
+                    <div class="col-sm-4"> </div>
+                </div>
+
+            </div> 
+        </div>
+
+
+
+
+
+
+        <footer>
+            <p class="pie"> Derechos de autor reservados &copy; 2022 Ana Leila Pacheco</p>
+        
+        </footer>
+
+
+</body>
+
+</html>

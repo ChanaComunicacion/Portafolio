@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <title>Portafolio Chana</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        h1 {
+            font-family: 'Candara';
+            src: url('candara_bold.ttf') ('truetype');
+            font-style: normal;
+            font: rgb(0, 0, 0);
+            font-size: 27px;
+            font-weight: normal;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-family: 'Candara';
+            src: url('candara_bold.ttf') ('truetype');
+            font-style: normal;
+            font-size: 40px;
+            letter-spacing: 5px;
+            padding: 0px;
+            margin-left: 0px;
+            font: #000;
+            font-weight: bolder;
+            margin-bottom: none;
+            text-align: center;
+
+        }
+
+        h3 {
+            font-family: 'Candara';
+            src: url('candara_bold.ttf')('truetype');
+            font-style: normal;
+            font-size: 12px;
+            letter-spacing: 7px;
+            padding: 15%;
+            margin-left: 20px;
+            font: #fff;
+        }
+
+        p {
+            font-family: sans-serif;
+            font-size: 24px;
+            font: #000;
+            padding: 20px;
+            margin-top: 70px;
+            margin-left: 20px;
+        }
+
+
+        body {
+            font-family: sans-serif;
+            font-size: 11px;
+            font: #000;
+            text-align: center;
+            padding-top: 40px;
+
+        }
+
+        /*estilos de la estructura del cuerpo*/
+
+        .bg-1 {
+            background-color: #fff;
+            color: #000
+        }
+
+        .bg-2 {
+            background-image: url(fondo\ web.png);
+            background-color: transparent;
+            height: 7vw;
+            width: 200vh;
+            padding: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0;
+            margin-right: 0;
+            background-repeat: no-repeat;
+            text-align: center;
+            background-size: cover;
+        }
+
+        .bg-3 {
+            color: #000;
+            background-image: url(Fondo\ gris.png);
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .bg-4 {
+            color: #fff;
+            background-color: #EAF207;
+            margin: 0px;
+            padding: 0%;
+            width: 100vw;
+            height: 30vh;
+        }
+
+        .container-fluid {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            background-color: transparent;
+            margin: 0%;
+            margin-top: 50px;
+            width: 90vw;
+            height: 1000vh;
+        }
+
+        .navbar {
+            font-family: 'Candara';
+            src: url('candara_bold.ttf') ('truetype');
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 3;
+            border-radius: 10;
+            margin-bottom: 3;
+            font-size: 16px;
+            border-color: transparent;
+            background-color: #F2F2F2;
+            font-style: normal;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .jumbotron {
+            background-color: transparent;
+        }
+
+        .carousel-control.right,
+        .carousel-control.left {
+            background-image: "none";
+            color: #EAF207;
+        }
+
+        .carousel-indicators li {
+            border-color: #ffffff;
+        }
+
+        .carousel-indicators li.active {
+            background-color: #fffffb;
+        }
+
+        .item spam {
+            font-style: normal;
+
+        }
+
+        .botonvermas {
+            background-image: url(botonvermas.png);
+            width: 8vw;
+            height: 25px;
+            border: none;
+            background-repeat: no-repeat;
+            margin-left: 15px;
+            margin: 5px;
+        }
+
+        .botonir {
+            background-image: url(botonir.png);
+            width: 3vw;
+            height: 5vh;
+            border: none;
+            background-repeat: no-repeat;
+            margin-left: 50px;
+            margin: 10px;
+        }
+
+        .botonsiguiente {
+            background-image: url(botonsiguiente.png);
+            width: 6vw;
+            height: 25px;
+            border: none;
+            background-repeat: no-repeat;
+            margin-left: 50px;
+            margin: 10px;
+
+        }
+
+        .botonatras {
+            background-image: url(botonatras.png);
+        }
+
+        .container {
+            background-color: transparent;
+            width: 100vw;
+        }
+
+        .home {
+            font-family: 'Candara';
+            src: url('candara_bold.ttf') ('truetype');
+            font-style: normal;
+            font-weight: bolder;
+            border: 2cm;
+        }
+
+        .navbar-left {
+            text-align: center;
+        }
+
+        .container-carousel {
+            width: 100vw;
+            height: 50vh;
+            background-color: transparent;
+            background-image: url(Fondo/gris.png);
+            text-align: center;
+            background-size: cover;
+
+        }
+
+        /*estilos de la específicos*/
+
+        #Linea-verde {
+            width: 100vw;
+            height: 20vh;
+            background-color: #EAF207;
+            padding: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 18px;
+            margin-right: 24px;
+        }
+
+        #Sobre-mi {
+            margin-left: 20px;
+            margin-right: 2px;
+            text-align: center;
+            width: 50vw;
+        }
+
+        #imagen-ana {
+            text-align: center;
+            margin-left: 145px;
+            margin-right: 700px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            align-content: center;
+            width: 20vw;
+
+        }
+
+        #google {
+
+            width: 8vw;
+            height: 8vh;
+            margin-left: 100px;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            padding: 5px;
+
+
+        }
+
+        #mariposa {
+            width: 5vw;
+            margin-left: 200px;
+            margin-top: 0px;
+            margin-bottom: 50px;
+
+
+        }
+
+        .pie {
+        background-color: transparent;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+    }
+
+    footer {  background-color: #05A696;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-align: center;
+        padding: 20px;
+
+    }
+    </style>
+
+    <script lenguage="javascript" type="text/javascript">
+        function enviar(pagina) {
+            document.nombreDelFormulario.action = pagina;
+            document.nombreDelFormulario.submit();
+        }
+
+        $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+    </script>
+
+
+
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="Portafolio.html"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="#myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+
+                    <li><a href="Portafolio.html" class="home" style="color: #EAF207">HOME</a></li>
+                    <li><a href="Sobre mi.html">SOBRE MI</a></li>
+                    <li><a href="Galeria.html">GALERÍA</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-carousel" text-aling="center" id="container-carousel">
+        <div id="#myCarousel" class="carousel slide text-center" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="portada.jpg" alt="Portada" class="imagencarousel">
+                </div>
+
+                <div class="item">
+                    <img src="portada2.jpg" alt="Portada2" class="imagencarousel">
+                </div>
+
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Regresar</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-2 text-center">
+        <div class="col-sm-12">
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div class="container bg-3">
+        <div class="row">
+            <div class="col-sm-6 text-justify">
+                <p>Chana Comunicación surge como plan de negocio
+                    digital. Esta marca busca transmitir mi esencia, estilo y
+                    personalidad. Es un reflejo de mi experiencia y servicios. <br>
+                    Tengo alma emprendedora y me gusta ayudar. En este
+                    emprendimiento enseñaré todo lo que he aprendido en
+                    comunicación y marketing en estos últimos 5 años.
+                    Actualmente brindo asesoramiento y diseño de contenido para redes sociales. Pronto ampliaré la
+                    propuesta. Mi
+                    misión es dictar cursos online como profesional en comunicación.
+                    <br> <br>
+                    •Este nombre surge porque, cuando era niña, mi hermano no podía pronunciar "Ana", para él era
+                    "Chana".
+                    Solo se recuerda, lo que se siente. Este apodo familiar se
+                    sostiene hasta la actualidad y representa gran parte de
+                    mi crecimiento. <br> <br>
+                    Hoy digo<strong> ¡a seguir creciendo!</strong>
+                </p>
+            </div>
+
+
+            <div class="col-sm-6 text-center">
+
+                <div class="jumbotron">
+                    <h2>Mi marca personal</h2>
+
+                    <img src="LOGO.png" alt="Logo Chana" width="400vw" style="width: 100%" class="img-responsive">
+                </div>
+            </div>
+
+            <div class="container bg-4 text-center">
+                <div class="col-sm-12 margin:5px" id="Linea-verde">
+                    <br><br>
+                    <marquee direction="right" loop="10">
+                        <h2>
+                            Bienvenid@ a mi página
+                        </h2>
+                    </marquee>
+                </div>
+            </div>
+
+
+
+            <div class="container bg-3 text-center">
+
+                <div class="col-sm-5 text-center" id="Sobre-mi" width="400vw" style="text-align: center ">
+                    <div class="jumbotron">
+                        <h2> Sobre mí </h2>
+                        <br>
+                        <div class="col-sm-5 text-center" id="imagen-ana">
+                            <img src="Ana Pacheco.jpg" class="img-responsive img-circle" style=" text-align: center;"
+                                alt="Foto Ana Leila Pacheco">
+                            <br><br>
+
+                            <a href="Sobre mi.html">
+                                <form action="">
+                                    <input type="button" value="" onClick="enviar('Sobremi.html')" class="botonvermas">
+                                </form>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-5 text-justify">
+                    <p>Me llamo Ana Leila Pacheco, tengo 23 años y soy de
+                        Santa Rosa, La Pampa, Argentina. Leonina nacida en
+                        agosto 1999. Me gusta viajar, la fotografía y el arte. Soy
+                        tranquila, detallista y alegre!<br><br>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51236.65208569618!2d-64.30123565000001!3d-36.61938735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c2cd07f7558a33%3A0x7bda8c2a7b70fd81!2sSanta%20Rosa%2C%20La%20Pampa%2C%20Argentina!5e0!3m2!1ses-419!2sco!4v1667941217622!5m2!1ses-419!2sco"
+                            width="480vw" height="350vw" style="border:0 " allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </p>
+                </div>
+
+
+                <br>
+            </div>
+        </div>
+
+
+        <div class="container bg-2 text-center">
+            <div class="col-sm-12">
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container bg-3 text-center">
+                <br>
+
+                <h2> Contacto </h2>
+
+<div class="row"></div>
+                <div class="col-sm-6 text-justify" id="google" style="margin: 30px; margin-left: 30px;">
+                    <br>
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Click para enviar mensaje">
+                        
+                      
+                    <a href="https://wa.me/message/XDHJHZ4KWAQNJ1">
+                        <img src="whatsapp.png" class="img-responsive">
+                    </a></button>
+
+                    <br><br><br><br>
+                    
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Click para ver">
+                        
+                    <a href="https://g.page/r/CRUrmu7-iIzgEBM/review">
+                        <img src="google.png" class="img-responsive">
+                    </a>
+                    </button>
+
+                    <br><br><br><br>
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Click para enviar mail">
+            
+                    <a href="mailto: chanacomunicacion@gmail.com">
+                        <img src="gmail.png" class="img-responsive">
+                    </a>
+                    </button>
+                </div>
+
+
+                <div class="col-sm-6 text-justify" style="margin: 30px; ">
+                    <br><br>
+                    <h1>Whatsapp: +54 9 2954 825435</h1>
+                    <br><br><br><br><br>
+                    <h1>Google: Chana comunicación</h1>
+                    <br><br><br><br><br>
+                    <h1>Gmail: Chanacomunicacion@gmail.com</h1>
+                    <br><br><br>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="mariposa gris.png" alt="mariposa" id="mariposa" class="img-responsive">
+                </div>
+
+                <div class="col-sm-4">
+                    <a href="Sobre mi.html">
+
+                        <form name="bontonsiguiente" action="" method="post">
+                            <input type="button" value="" onClick="enviar('Sobremi.html')" class="botonsiguiente">
+                        </form>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="pie"> Derechos de autor reservados &copy; 2022 Ana Leila Pacheco</p>
+    
+    </footer>
+</body>
+</head>
+
+</html>

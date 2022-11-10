@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Portafolio Chana</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    h1 {
+        font-family: 'Candara';
+        src: url('candara_bold.ttf') ('truetype');
+        font-style: normal;
+        font: #05A696;
+        font-size: 34px;
+        font-weight: normal;
+    }
+
+    h2 {
+        font-family: 'Candara';
+        src: url('candara_bold.ttf') ('truetype');
+        font-size: 40px;
+        letter-spacing: 7px;
+        padding: 10px;
+        margin-left: 20px;
+        color: #05A696;
+        font-weight: normal;
+        position: initial;
+        text-align: left;
+    }
+
+    h3 {
+        font-family: 'Candara';
+        src: url('candara_bold.ttf')('truetype');
+        font-style: normal;
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 5%;
+        margin-left: 20px;
+        font: rgb(0, 0, 0);
+        text-align: center;
+    }
+
+    p {
+        font-family: sans-serif;
+        font-size: 18px;
+        font: #000;
+        padding: 20px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+
+    body {
+        font-family: sans-serif;
+        font-size: 11px;
+        font: #000;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+
+    /*estilos de la estructura del cuerpo*/
+
+    .bg-1 {
+        background-color: #fff;
+        color: #000
+    }
+
+    .bg-2 {
+        background-image: url(fondo\ web.png);
+        background-color: transparent;
+        height: 7vw;
+        width: 200vh;
+        padding: 0px;
+        margin-top: 2px;
+        margin-bottom: 0px;
+        margin-left: 0;
+        margin-right: 0;
+        background-repeat: no-repeat;
+        text-align: center;
+        background-size: cover;
+    }
+
+    .bg-3 {
+        background-image: url(Fondo\ gris.png);
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .bg-4 {
+        color: #fff;
+        background-color: #EAF207;
+        margin: 0px;
+        padding: 0%;
+        width: 100vw;
+        height: 30vh;
+
+    }
+
+    .container-fluid {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background-color: transparent;
+        margin: 0%;
+        margin-top: 50px;
+        width: 90vw;
+        height: 1000vh;
+    }
+
+    .navbar {
+        font-family: 'Candara';
+        src: url('candara_bold.ttf') ('truetype');
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 3;
+        border-radius: 10;
+        margin-bottom: 3;
+        font-size: 16px;
+        border-color: transparent;
+        background-color: #F2F2F2;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .jumbotron {
+        background-color: transparent;
+    }
+
+    .container {
+        background-color: transparent;
+        width: 100vw;
+    }
+
+    .botonsiguiente {
+        background-image: url(botonsiguiente.png);
+        width: 6vw;
+        height: 25px;
+        border: none;
+        background-repeat: no-repeat;
+        margin-left: 50px;
+        margin: 10px
+    }
+
+    .botonatras {
+        background-image: url(botonatras.png);
+        width: 6vw;
+        height: 5vh;
+        border: none;
+        background-repeat: no-repeat;
+        margin-left: 50px;
+        margin: 10px;
+
+    }
+
+    .home {
+        font-family: 'Candara';
+        src: url('candara_bold.ttf') ('truetype');
+        font-style: normal;
+        font-weight: bolder;
+        border: 2cm;
+    }
+
+    .navbar-left {
+        text-align: center;
+    }
+
+    .pie {
+        background-color: transparent;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+    }
+
+    footer {  background-color: #05A696;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    #escuelas {
+        text-align: center;
+        padding: 10px;
+        margin: 15px;
+        width: 270px;
+        margin-left: 55px;
+        margin-right: 10px;
+    }
+
+    #idiomas {
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
+        width: 15vw;
+        margin-left: 100px;
+        margin-right: 0px;
+        margin-bottom: 80px;
+    }
+
+    #mariposa {
+        width: 5vw;
+        margin-left: 200px;
+        margin-top: 0;
+        margin-bottom: 50px;
+
+    }
+</style>
+
+<script lenguage="javascript" type="text/javascript">
+    function enviar(pagina) {
+        document.nombreDelFormulario.action = pagina;
+        document.nombreDelFormulario.submit();
+    }
+</script>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="Portafolio.html"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="#myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+
+                    <li><a href="Portafolio.html">HOME</a></li>
+                    <li><a href="Sobre mi.html" class="home" style="color: #EAF207">SOBRE MI</a></li>
+                    <li><a href="Galeria.html">GALERÍA</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container bg-2 text-center">
+        <div class="col-sm-12">
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div class="container bg-3 text-center" id="formacion" style="font:#05A696">
+        <div class="col-sm-12 text-left">
+            <marquee direction="right" loop="20">
+                <h2>Formación</h2>
+            </marquee>
+        </div>
+        <div class="row ">
+            <div class="col-sm-3" id="escuelas">
+                <a href="https://drive.google.com/file/d/1YyEkAYqpGn1YoPlL7yrRFOpwWQcxcHh7/view?usp=sharing">
+                    <img src="usb.jpg" class="img-responsive" alt="Universidad de San Buenaventura"></a>
+                <p> Universidad de San Buenaventura </p>
+            </div>
+
+            <div class="col-sm-3" id="escuelas">
+                <a href="https://drive.google.com/file/d/1HPPjx_Qz4nkS9RlxF_sOT5CsWZ3BLnzF/view?usp=sharing"><img
+                        src="unlpam.png" class="img-responsive" alt="Universidad Nacional de La Pampa">
+                </a>
+                <p> Universidad Nacional de La Pampa </p>
+            </div>
+
+            <div class="col-sm-3" id="escuelas">
+                <a href="https://drive.google.com/file/d/1yeGQQkExtTxVD2x6bx9PHrga1LKqQFq-/view?usp=sharing">
+                    <img src="sead.png" class="img-responsive" alt="Servicio de Educación a Distancia">
+                </a>
+                <p> Servicio de Educación a Distancia </p>
+            </div>
+
+            <div class="col-sm-3" id="escuelas">
+                <a href="https://drive.google.com/file/d/1u8sMCm3vmeobYLX2irpEmn9wObISDEZ7/view?usp=sharing">
+                    <img src="iesi.png" class="img-responsive" alt="Institut d'enseigment de Sept-Iles">
+                </a>
+                <p> Institut d'enseigment de Sept-Iles </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-5" style="margin-left: 90px; text-align: center; margin-top: 90px;margin-bottom: 30px;">
+                <a href="https://www.instagram.com/p/Cgk7NOBL-r4/?utm_source=ig_embed&utm_campaign=loading">
+                    <img src="publiuni.png" alt="publicación de Instagram" class="img-responsive"
+                        style="border-radius: 5% ;">
+                </a>
+
+            </div>
+            <br>
+
+            <div class="col-sm-5" style="margin-left: 30px; text-align: center; margin-bottom: 30px;">
+                <a href="https://www.instagram.com/p/CjwGRPjJDq_/?utm_source=ig_embed&utm_campaign=loading">
+                    <img src="publirevista.png" alt="publicación de Instagram" class="img-responsive"
+                        style="border-radius: 5% ;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-2 text-center margin-top: 20px">
+        <div class="col-sm-12">
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div class="container bg-3 text-center" id="formacion" style="font:#05A696">
+        <div class="col-sm-12 text-left; margin-left: 30px;">
+            <marquee direction="right" loop="20">
+                <h2>Idiomas</h2>
+            </marquee>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-3" id="idiomas">
+                <img src="hola.png" class="img-responsive" alt="Español" width="220vw">
+            </div>
+            <div class="col-sm-3" id="idiomas">
+                <img src="bonjour.png" class="img-responsive" alt="Francés" width="220vw">
+            </div>
+            <div class="col-sm-3" id="idiomas">
+                <img src="hi.png" class="img-responsive" alt="Inglés" width="220vw">
+            </div>
+            <div class="col-sm-3" id="idiomas">
+                <img src="chao.png" class="img-responsive" alt="Italiano" width="220vw">
+            </div>
+        </div>
+
+        <div class="row">
+            <br>
+            <div class="col-sm-4 ">
+                <a href="Portafolio.html" target="_blank">
+                    <form name="botonatras" action="" method="post">
+                        <input type="button" value="" onClick="enviar('Portafolio.html')" class="botonatras">
+                    </form>
+                </a>
+            </div>
+
+            <div class="col-sm-4">
+                <img src="mariposa celes.png" alt="mariposa" id="mariposa" class="img-responsive">
+            </div>
+
+            <div class="col-sm-4">
+                <a href="Galeria.html">
+
+                    <form name="botonsiguiente" action="" method="post">
+
+                        <input type="button" value="" onClick="enviar('Galeria.html')" class="botonsiguiente">
+                    </form>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="pie"> Derechos de autor reservados &copy; 2022 Ana Leila Pacheco</p>
+    
+    </footer>
+    
+</body>
+
+</html>
